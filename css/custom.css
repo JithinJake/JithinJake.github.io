@@ -117,14 +117,14 @@ p{
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.reference-item .reference-custom span:hover .overlay,
+/*.reference-item .reference-custom span:hover .overlay,
 .reference-item .reference-custom span:focus .overlay {
   display: block;
   top: 0;
   opacity: 0.8;
   filter: alpha(opacity=80);
   cursor: pointer; cursor: hand;
-}
+}*/
 .reference-item .reference-custom span:hover img,
 .reference-item .reference-custom span:focus img {
   -webkit-transform: scale(1.2, 1.2);
@@ -300,4 +300,15 @@ to {background-position: 100% 100%;}
   filter: alpha(opacity=60);
   cursor: pointer; cursor: hand;
 } 
-
+.imgContainer{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.txtCentered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+}
