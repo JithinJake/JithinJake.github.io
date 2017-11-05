@@ -154,6 +154,38 @@ UNIVERSAL SECTION STYLES
 .text-parallax.parallax-image1 {
   background: url('../img/parallax1.jpg') center center no-repeat fixed;
 }
+
+#a43 {
+  position: relative;
+  height: 100%;
+}
+
+#k43 {
+  position: relative;
+  height: 100%;
+}
+
+
+#a43 .item {
+  height: 100%;
+  background: url('../img/a43.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+}
+
+#k43 .item {
+  height: 100%;
+  background: url('../img/k43.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-backface-visibility: hidden;
+}
+
 @media (max-width: 991px) {
   .text-parallax {
     padding-top: 80px;
@@ -180,14 +212,14 @@ INTRO
   -webkit-backface-visibility: hidden;
 }
 #intro .item .logo {
-  margin-bottom: 120px;
+  margin-bottom: 0px;
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-backface-visibility: hidden;
 }
 @media (max-width: 767px) {
   #intro .item .logo {
-    margin-bottom: 50px;
+    margin-bottom: -100px;
   }
 }
 #intro .item h1 {
@@ -436,12 +468,12 @@ WORKS / REFERENCES
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-.reference-item .reference a:hover .overlay,
-.reference-item .reference a:focus .overlay {
+.reference-item .reference a .overlay,
+.reference-item .reference a .overlay {
   display: block;
   top: 0;
   opacity: 0.8;
-  filter: alpha(opacity=80);
+  filter: alpha(opacity=60);
 }
 .reference-item .reference a:hover img,
 .reference-item .reference a:focus img {
@@ -1143,8 +1175,8 @@ strong {
   }
 }
 .navbar-default {
-  background-color: rgba(244, 244, 244, .4);
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  background-color: rgba(244, 244, 244, .9) !important;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.9);
  
 }
 .navbar-default .navbar-brand {
@@ -1802,22 +1834,3 @@ a.list-group-item.active > .badge,
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
-<!-- before -->
-.reference-item .reference-custom span:hover .overlay,
-.reference-item .reference-custom span:focus .overlay {
-  display: block;
-  top: 0;
-  opacity: 0.8;
-  filter: alpha(opacity=60);
-  cursor: pointer; cursor: hand;
-} 
-
-<!-- after -->
-.reference-item .reference-custom span:hover .overlay,
-.reference-item .reference-custom span:focus .overlay {
-  display: block;
-  top: 0;
-  opacity: 0.8;
-  filter: alpha(opacity=60);
-  cursor: pointer; cursor: hand;
-} 
